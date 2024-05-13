@@ -348,14 +348,15 @@ body
 }
 .services .service-menu .service
 {
-  line-height: 20px;  
-    width: 20%;
+    line-height: 20px;  
+    width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 15px;
     background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
     border-radius: 40px;
+    margin-right: 0.5em;
 }
 .services .service-menu .service img
 {
@@ -375,7 +376,7 @@ body
 .services .service-menu .service p
 {
     color: #FFFFFF;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 400;
     padding: 1em 0;
     text-align: left;
@@ -398,5 +399,162 @@ body
 {
     text-decoration: none;
     color: #343045;
+}
+
+.tech
+{
+    width: 80%;
+    margin: auto;
+    padding: 2em 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tech .tech-intro-text
+{
+    background-image: url("pexels-rodnae-productions-8097332 1.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    text-align: center;
+    padding: 100px;
+    border-radius: 160px;
+}
+.tech .tech-intro-text h1
+{
+    font-size: 36px;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.tech .tech-intro-text h1 .span-item
+{
+    font-size: 36px;
+    font-weight: 700; 
+}
+.tech .tech-btn 
+{
+    background: #0E0E0E52;
+    padding: 10px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 30px;
+    padding-bottom: -5em ;
+}
+.tech .tech-btn button
+{
+    border: none;
+    outline: none;
+    background:none;
+    padding: 10px;
+}
+.tech .tech-btn button  a img
+{
+    padding: 10px;
+    background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+.tech .tech-images
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.tech .tech-images img
+{
+    padding-right: 2em;
+     width: 250px;
+}
+
+.process
+{
+    width: 80%;
+    margin: auto;
+    padding: 5em 0; 
+}
+.process .process-intro
+{
+    display: flex;
+    justify-content: space-between;
+}
+.process .process-intro .process-intro-header
+{
+    display: flex;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    align-items: center;
+}
+.process .process-intro .process-intro-header h1 
+{
+    font-size: 36px;
+    font-weight: 300;
+}
+.process .process-intro .process-intro-header h1 .span-item
+{
+    font-size: 36px;
+    font-weight: 700;
+}
+.process .process-intro .process-intro-header img
+{
+    width: 200px;
+}
+.process .process-intro .process-intro-text
+{
+    width: 50%;
+}
+.process .process-intro .process-intro-text p
+{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.process .process-menu
+{
+    padding: 5em 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.process .process-menu .process-menu-item
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.process .process-menu .process-menu-item .process-menu-item-header
+{
+    padding: 15px;
+    border-radius: 100px;
+    margin: 1em 0;
+    background: rgba(13, 13, 13, 0.32);
+}
+.process .process-menu .process-menu-item .process-menu-item-header h1
+{
+    color:#343045;
+    font-size: 50px;
+    font-weight: 700;
+    background: linear-gradient(251.27deg, #C0B7E8 12.87%, #8176AF 89.33%);
+    padding:30px;
+    border-radius: 100px;
+}
+.process .process-menu .process-menu-item .process-menu-item-text
+    {
+    display: flex; 
+    align-items: center;
+    width: 80%;
+}
+.process .process-menu .process-menu-item .process-menu-item-text p
+{
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 700;
+}
+.process .process-menu .process-menu-item .process-menu-item-text img
+{
+    width: 40px;
+    padding-right: 1em;
 }
 
