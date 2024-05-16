@@ -10,7 +10,6 @@ body
     width: 100vw;
     background-color: #302C42;
     font-family: "Montserrat";
-    overflow-x: hidden;
 }
 .hero
 {
@@ -30,6 +29,10 @@ body
 {
     display: flex;
     align-items: center;
+}
+.hero .hero-header .hamburger
+{
+    display: none;
 }
 .hero .hero-header .header-logo .header-img, .hero .hero-header .header-logo .header-text
 {
@@ -630,11 +633,14 @@ body
 .user-info ::placeholder
 {
     padding-left: 2em;
+    text-transform: capitalize;
 }
 .user-subject ::placeholder, .user-message ::placeholder
 {
     padding-left: 3em;
     padding-top: 1em;
+    text-transform: capitalize;
+    font-size:px;
 }
 
 .opt-In .form-field .form-body .user-subject textarea, .opt-In .form-field .form-body .user-message textarea
@@ -707,7 +713,7 @@ footer .footer-top .footer-item p
 }
 footer .footer-top .footer-item .media-links a img
 {
-    padding-right: 0.5em;
+    padding-right: 0.2em;
     margin: 1.5em 0;
 }
 footer .footer-top .footer-item button
@@ -740,7 +746,785 @@ footer .footer-bottom p
     color: #FFFFFF;
 }
 
+@media screen and (max-width: 767px){
+    body 
+    {
+        overflow-x: hidden ;
+        width: 100vw;
+        margin: auto;
+    }
+    
+    .hero
+    {
+        width: 80%;
+        margin: auto;
+    }
+    .hero .hero-header 
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hero .hero-header .header-logo img
+    {
+        width: 80px;
+    }
 
+    .hero .hero-header .header-menu, .hero .hero-header .header-btn
+    {
+        display: none;
+    }
+    .hero .hero-header .hamburger
+    {
+        display: block;
+    }
+    .hero .hero-header-intro
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: auto;
+    }
+    .hero .hero-header-intro .header-intro-img img
+    {
+        width: 100%;
+    }
+    .hero .hero-header-intro .header-intro-text
+    {
+        padding: 2em 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .hero .hero-header-intro .header-intro-text h1
+    {
+        font-family: Montserrat;
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+    .hero .hero-header-intro .header-intro-text h1 .span-item
+    {
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 48.76px;
+        text-align: center;
 
+    }
+    .hero .hero-header-intro .header-intro-text p
+    {
+        display: none;
+    }
+    .hero .hero-header-intro .header-intro-text .header-intro-nav button 
+    {
+        width: 300px;
+        padding: 15px;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 1em 0;
+    }
+    .header-intro-nav img
+    {
+        display: none;
+    }
+    .hero .hero-header-contact
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border-radius: 20px;
+    }
+    .hero .hero-header-contact .location .location-text h3,.hero .hero-header-contact .phone .phone-text h3,.hero .hero-header-contact .message .message-text h3
+    {
+        font-size: 15px;
+    }
+    .hero .hero-header-contact .location,.hero .hero-header-contact .phone, .hero .hero-header-contact .message
+    {
+        display: flex;
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #8176AF;
+        margin: 1.5em 0;
+        padding: 1em 0;
+
+    }
+    
+    .bioBox 
+    {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+        justify-content: center;
+    }
+    .bioBox .introduction
+    {
+        align-items: center;
+    }
+    .bioBox .introduction .left-intro
+    {
+        width: 100%;
+        margin:auto;
+    }
+    .bioBox .introduction .left-intro h1
+    {
+        text-align: center;
+    }
+    .bioBox .introduction .left-intro h1 .span-item
+    {
+    font-size: 26px;
+    font-weight: 700;
+    }
+    .bioBox .introduction .left-intro .left-intro-bottom
+    {
+       display: flex;
+       justify-content: center;
+    }
+    .bioBox .introduction .left-intro .left-intro-bottom h1
+    {
+        font-size: 26px;
+        font-weight: 300;
+        text-align: center;
+    }
+    .bioBox .introduction .left-intro .left-intro-bottom img 
+    {
+        display: none;
+    }
+    .bioBox .introduction .right-intro 
+    {
+        display: none;
+    }
+    .bioBox .about
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .bioBox .about .about-img img 
+    {
+        width: 100%;
+        border-radius: 60px 140px 60px 140px;
+    }
+    .bioBox .about
+    {
+        width: 100%;
+        margin: auto;
+    }
+    .bioBox .about .about-text 
+    {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bioBox .about .about-text h1 
+    {
+        display: none;
+    }
+    .bioBox .about .about-text p
+    {
+        font-size: 15px;
+        font-weight: 200;
+        line-height: 18px;
+        text-align: left;
+        letter-spacing: 1px;
+    }
+    .bioBox .about .about-text button 
+    {
+        padding: 20px;
+        width: 90%;
+        margin: auto;
+        font-size: 14px;
+        font-weight: 700;
+        color: #343045;
+    }
+    .services
+    {
+        width: 80%;
+        margin: auto;
+    }
+    .services .service-intro 
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .services .service-intro .service-intro-header
+    {
+        width: 100%;
+        padding: 1em 0;
+    }
+    .services .service-intro .service-intro-header h1 
+    {
+        width: 100%;
+    }
+    .services .service-intro .service-intro-text
+    {
+        width: 100%;
+    }
+    .services .service-intro .service-intro-text p 
+    {
+        width: 100%;
+    }
+    .services .service-intro  .service-intro-header img 
+    {
+        display: none;
+    }
+    .services .service-menu
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;align-items: center;
+        justify-content: center;
+    }
+
+    .opt-In 
+    {
+        width: 80%;
+        margin: auto;
+    }
+    .opt-In .form-field
+    {
+        width: 100%;
+        margin: auto;
+    }
+    .opt-In .form-field .form-header
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        text-align: center;
+    }
+    .opt-In .form-field .form-header h1
+    {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .opt-In .form-field .form-header p
+    {
+        font-size: 24px;
+        font-weight: 300;
+    }
+    .opt-In .form-field .form-body
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
+    .opt-In .form-field .form-body .user-info, .opt-In .form-field .form-body .user-subject, .opt-In .form-field .form-body .user-message, .opt-In .form-field .form-body .user-btn
+    {
+        width: 100%;
+        margin: auto;
+    }
+   .opt-In .form-field .form-body .user-subject textarea, .opt-In .form-field .form-body .user-message textarea
+   {
+    width: 100%;
+    margin: auto;
+   }
+    .opt-In .form-field .form-body .user-info
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .opt-In .form-field .form-body .user-info input
+    {
+      width: 100%;
+    }
+    .opt-In .form-field .form-body .user-btn input 
+    {
+        width: 100%;
+        font-size: 14px;
+        font-weight: 700;
+        color: #343045;
+    }
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .footer-top
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .footer-top .footer-item
+    {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+    footer .footer-top .footer-item .footer-item-img 
+    {
+       width: 80%;
+       margin: auto;
+    }
+    footer .footer-top .footer-item .footer-item-list
+    {
+        display: none;
+    }
+    #footer-media
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+    }
+    #footer-media p 
+    {
+        font-size: 16px;
+        font-weight: 700;
+       padding-top: 5em;
+    }
+    #footer-media .media-links
+    {
+        padding: 0.5em 0;
+    }
+    #footer-media .media-links a img 
+    {
+        padding-right: 0.5em;
+    }
+    #footer-media button 
+    {
+        width: 80%;
+        padding: 20px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .footer-bottom
+    {
+        width: 80%;
+        margin: auto;
+        padding: 1em 0;
+    }
+    .footer-bottom p 
+    {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17.07px;
+        letter-spacing: 0.13em;
+        text-align: center;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        width: 100%;
+        margin: auto;
+        line-height: 30px;
+    }
+} 
+@media screen and (min-width:768px) and (max-width:1023px){
+body
+{
+    overflow-x: hidden;
+    width: 100vw;
+}
+.hero
+{
+   width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero .hero-header
+{
+   width: 100%;
+   margin: auto;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+}
+.hero .hero-header .header-menu, .hero .hero-header .header-btn
+    {
+        display: none;
+    }
+.hero .hero-header .hamburger
+    {
+        display: block;
+    }
+.hero .hero-header-intro 
+{
+    width: 100%;
+    margin: auto;
+}    
+.hero .hero-header-intro  .header-intro-text
+{
+    width: 50%;
+}
+.hero .hero-header-intro  .header-intro-text h1
+{
+    width:100%;
+    font-size: 25px;
+}
+.hero .hero-header-intro  .header-intro-text h1 .span-item
+{
+    font-size: 25px;
+}
+.hero .hero-header-intro  .header-intro-text p
+{
+    font-size: 16px;
+    text-align: left;
+    width: 100%;
+}
+.hero .hero-header-intro  .header-intro-text .header-intro-nav
+{
+    width: 100%;
+}
+.hero .hero-header-intro  .header-intro-text .header-intro-nav button 
+{
+    width:500px;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.hero .hero-header-intro  .header-intro-img
+{
+    width:50%;
+    margin: auto;
+}
+.hero .hero-header-intro  .header-intro-img img 
+{
+    width: 100%;
+}
+.hero .hero-header-contact
+{
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.hero .hero-header-contact .location, .hero .hero-header-contact .phone, .hero .hero-header-contact .message
+{
+    width: 35%;
+    margin: auto;
+    padding: 8px;
+}
+.hero .hero-header-contact .location .location-img img,.hero .hero-header-contact .phone .phone-img img, .hero .hero-header-contact .message .message-img img
+{
+    width: 40px;
+}
+.hero .hero-header-contact .location .location-text h3,.hero .hero-header-contact .phone .phone-text h3,.hero .hero-header-contact .message .message-text h3
+{
+    font-size: 15px;
+}
+.hero .hero-header-contact .location .location-text p,.hero .hero-header-contact .phone .phone-text p,.hero .hero-header-contact .message .message-text p
+{
+    font-size: 10px;
+}
+.bioBox 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.bioBox .introduction
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+.bioBox .introduction .left-intro
+{
+    width: 50%;
+}
+.bioBox .introduction .left-intro h1 .span-item, .bioBox .introduction .left-intro .left-intro-bottom h1, .bioBox .about .about-text h1 .span-item, .bioBox .about .about-text h1, .process .process-intro .process-intro-header h1, .process .process-intro .process-intro-header h1 .span-item 
+{
+    font-size: 30px;
+}
+.bioBox .introduction .right-intro 
+{
+    width: 50%;
+}
+.bioBox .introduction .right-intro  p 
+{
+    width: 100%;
+}
+.bioBox .about 
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.bioBox .about .about-img
+{
+    width: 50%;
+}
+.bioBox .about .about-img img 
+{
+    width: 100%;
+    margin: auto;
+   margin-left: -1rem;
+}
+.bioBox .about .about-text 
+{
+    width: 50%;
+}
+.bioBox .about .about-text  p 
+{
+    width: 100%;
+    font-size: 15px;
+}
+.bioBox .about .about-text button 
+{
+    padding: 15px;
+    font-weight: 500;
+}
+
+.services
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.services .service-intro
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    margin: auto;
+}
+.services .service-intro .service-intro-header
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: first baseline;
+}
+.services .service-intro .service-intro-header 
+{
+    width: 50%;
+}
+.services .service-intro .service-intro-header  p
+{
+    width: 100%;
+}
+.services .service-menu
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.services .service-menu .service
+{
+  width: 100%;
+  text-align: left;
+}
+.services .service-menu .service p
+{
+    font-size: 15px;
+}
+.tech 
+{
+    width: 100%;
+}
+.tech .tech-intro-text
+{
+    border-radius: 0;
+}
+.tech .tech-images 
+{
+  
+}
+.tech .tech-images img
+{
+    width: 150px;
+}
+.process
+{
+    width: 80%;
+    margin: auto;
+}
+.process .process-intro .process-intro-header
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: first baseline;
+}
+.process .process-intro .process-intro-header 
+{
+    width: 50%;
+}
+.process .process-intro .process-intro-header  p
+{
+    width: 100%;
+}
+.process .process-menu
+{
+   display: grid;
+   grid-template-columns: auto auto;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+}
+.opt-In
+{
+    width: 80%;
+    margin: auto;
+}
+.opt-In .form-field 
+{
+    width: 100%;
+    margin: auto;
+}
+.opt-In .form-field .form-header h1
+{
+    font-size: 30px;
+}
+.opt-In .form-field .form-header p 
+{
+    font-size: 25px;
+}
+.opt-In .form-field .form-body
+{
+   width: 80%;
+   margin: auto;
+}
+.opt-In .form-field .form-body .user-info
+{
+    width: 100%;
+}
+.opt-In .form-field .form-body .user-info input 
+{
+    width: 100%;
+    margin-left: -15px;
+}
+.opt-In .form-field .form-body .user-btn
+{
+    width: 100%;
+    margin: auto;
+}
+.opt-In .form-field .form-body .user-btn input 
+{
+    width:40%;
+    margin: auto;
+    font-size: 15px;
+    font-weight: 700;
+}
+footer .footer-top .footer-item 
+{
+   width: 30%;
+  
+}
+footer .footer-top .footer-item .footer-item-img
+{
+    width: 150px;
+}
+#footer-media p 
+{
+    font-size: 12px;
+}
+#footer-media .media-links img
+{
+    width: 25px;
+}
+}
+@media screen and (min-width: 1024px) and (max-width:1080px ){
+    body 
+    {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    .hero .hero-header
+    {
+       width: 100%;
+       margin: auto;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: space-between;
+    }
+    .hero .hero-header .header-menu, .hero .hero-header .header-btn
+        {
+            display: none;
+        }
+    .hero .hero-header .hamburger
+        {
+            display: block;
+        }
+        .hero .hero-header-intro
+        {
+            gap: 20px;
+        }
+    .hero .hero-header-intro .header-intro-text
+    {
+        width: 50%;
+    }
+    .hero .hero-header-intro .header-intro-text h1
+    {
+        width: 100%;
+        font-size: 35px;
+        text-align: left;
+    }
+    .hero .hero-header-intro .header-intro-text h1 .span-item
+    {
+        font-size: 40px;
+    }
+    .hero .hero-header-intro .header-intro-text p
+    {
+        width: 100%;
+    }
+    .hero .hero-header-intro .header-intro-img
+    {
+        width: 50%;
+    }
+    .hero .hero-header-intro .header-intro-img img  
+    {
+        width: 100%;
+    }
+    .opt-In .form-field .form-body .user-btn input 
+    {
+        width: 30%;
+        padding: 15px;
+        font-size: 15px;
+        font-weight: 900;
+    }
+
+    #footer-media p 
+{
+        font-size: 12px;
+    }
+    #footer-media .media-links img
+    {
+        width: 25px;
+}
+}
 
 
