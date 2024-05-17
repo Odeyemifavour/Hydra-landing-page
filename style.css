@@ -10,6 +10,7 @@ body
     width: 100vw;
     background-color: #302C42;
     font-family: "Montserrat";
+    overflow-x: hidden;
 }
 .hero
 {
@@ -749,9 +750,9 @@ footer .footer-bottom p
 @media screen and (max-width: 767px){
     body 
     {
-        overflow-x: hidden ;
-        width: 100vw;
-        margin: auto;
+        overflow-x: hidden;
+      width: 100vw;
+       
     }
     
     .hero
@@ -985,7 +986,111 @@ footer .footer-bottom p
         margin: auto;align-items: center;
         justify-content: center;
     }
+    .services .service-menu .service
+    {
+        width: 100%;
+        margin: 1em 0;
 
+    }
+    .services .service-menu .service p
+    {
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+    }
+    .services .service-menu .service button 
+    {
+        padding: 15px;
+    }
+    .tech
+    {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tech .tech-intro-text
+    {
+        border-radius: 0px;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+        border-radius: 20px;
+    }
+    .tech .tech-intro-text h1 
+    {
+        width: 100%;
+        margin: auto;
+        font-size: 25px;
+    }
+    .tech .tech-intro-text h1  .span-item
+    {
+        font-size: 25px;
+    }
+    .tech .tech-btn
+    {
+        display: none;
+    }
+    .tech .tech-images
+    {
+        
+    }
+    .tech .tech-images img 
+    {
+        width: 100px;
+
+    }
+    .process 
+    {
+        width: 80%;
+        margin: auto;
+    }
+    .process .process-intro
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .process .process-intro .process-intro-header h1
+    {
+        text-align: center;
+        font-size: 30px;
+        width: 100%;
+    }
+    .process .process-intro .process-intro-header h1 .span-item
+    {
+        font-size: 30px;
+    }
+    .process .process-intro .process-intro-header img 
+    {
+        display: none;
+    }
+    .process .process-intro .process-intro-text
+    {
+        width: 100%;
+        padding: 1.5em 0;
+        align-items: center;
+    }
+    .process .process-intro .process-intro-text p 
+    {
+        width: 100%;
+    }
+    .process .process-menu 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .process .process-menu  .process-menu-item
+    {
+        padding: 1em 0;
+    }
     .opt-In 
     {
         width: 80%;
