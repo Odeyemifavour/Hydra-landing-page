@@ -178,7 +178,6 @@ body
     text-align: left;
     width: 30%;
     margin: auto;
-    padding: 2px;
 }
 .hero .hero-header-contact .location, .hero .hero-header-contact .phone
 {
@@ -675,7 +674,7 @@ footer
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding:10em 2em;
+    padding-top:10em ;
 }
 footer .footer-top
 {
